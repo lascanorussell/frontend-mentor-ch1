@@ -1,0 +1,146 @@
+body, html{
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    line-height: 1.3;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    padding: 1.7rem;
+}
+
+.card{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
+}
+.card-desc{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 6rem 6rem 6rem 6rem;
+}
+.card-img{
+    background-color: hsl(277, 64%, 61%); /* Tint color */
+    background-blend-mode: multiply;
+    width: 100%;
+    max-width:700px;
+    background-image: url(assets/image-header-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.desc-title{
+    font-size: 3.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+.desc-info{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+    padding: 2rem 9rem 6rem 0rem;
+    font-size: 1.2rem;
+}
+
+
+
+
+.insight{
+    color: hsl(277, 64%, 61%);
+}
+
+
+
+
+.points{
+    display: flex;
+    margin-top: auto;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.pt{
+    margin-right: 5rem;
+}
+
+.pt> div:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pt> div:nth-child(2){
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.pt > div:nth-child(2){
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 730px){
+    html, body{
+        height: auto;
+        text-align: center;
+    }
+    
+    
+    .card{
+        flex-direction: column-reverse;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .card-desc{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 2rem;
+    }
+    .card-img{
+        padding-bottom: 80%;
+    }
+    
+    .desc-title{
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .desc-info{
+        line-height: 1.6;
+        padding: 1rem 0 2rem;
+        font-size: 1rem;
+    }
+    
+    
+    
+    .points{
+        line-height: 1.6;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .pt{
+        margin-right: 0;
+        font-family: 'Inter', sans-serif;
+        padding: .7rem 0;
+    }
+    
+    .pt> div:nth-child(1){
+        font-size: 1.7rem;
+    }
+    
+
+}
